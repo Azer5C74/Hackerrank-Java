@@ -1,0 +1,60 @@
+
+
+//Complete the classes below
+class Flower {
+    public Flower(){
+    }
+    public String whatsYourName(){
+        return "I have many names and types." ;
+    }
+}
+
+class Jasmine extends Flower {
+    public Jasmine(){
+        super();
+    }
+    public String whatsYourName(){
+        return "Jasmine" ;
+    }
+}
+
+class Lily extends Flower{
+    public Lily(){
+        super();
+    }
+    public String whatsYourName(){
+        return "Lily" ;
+    }
+}
+
+class Region {
+    public Region(){}
+    public Flower yourNationalFlower(){
+    Flower r=new Flower();
+    return r ;
+    }
+}
+
+class WestBengal extends Region{
+    public WestBengal(){
+        super() ;
+    }
+
+        public Flower yourNationalFlower(){
+        Flower f=new Jasmine();
+        return f ;
+        }
+
+    
+}
+
+class AndhraPradesh extends Region{
+    public AndhraPradesh(){
+        super();
+    }
+    public Flower yourNationalFlower(){
+             Flower F=new Lily();
+
+        return F;
+    }
+}
